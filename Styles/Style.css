@@ -1,9 +1,8 @@
 body {
     font-family: 'Raleway' , sans-serif;
     margin: 0;
-    padding: 20px;
     display: grid;
-    grid-template-columns: 1.5fr 4fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 50px 1fr 100px;
   }
 
@@ -20,13 +19,11 @@ body {
     background-image: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,6,154,1) 100%);
     color: rgb(236, 236, 235);
     position: sticky;
-    width: auto;
-    justify-content:;
     top: 0;
     bottom: 0;
     left: 0;
-    grid-column: 1/1;
-    grid-row: 1/3;
+    grid-column: 1/2;
+    grid-row: 1/end;
   }
 
   .sidebar h1 {
@@ -51,10 +48,10 @@ body {
     box-shadow: 0 0 0.8em 0em black;
     background-color: white;
     padding: 1em;
-    left: auto;
     top: 0;
     right: 0;
-    display: flex;
+    display: grid;
+    grid-auto-flow: column;
     flex-wrap: nowrap;
     justify-content:space-around;
     gap: 2em;
@@ -72,32 +69,30 @@ body {
 
   header a:hover {
     color: white;
-    top: -10px;
-    bottom: -10px;
-    right: -10px;
-    left: -10px;
     background-color: darkblue;
     box-shadow: 0 0 2em 2em darkblue;
-  }
+    }
 
   .mainContent {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
+    display: grid;
+    justify-items: center;
     grid-column: 2/2;
     grid-row: 2/2;
   }
 
   footer {
-    display: flex;
-    flex-direction: row;
-    grid-column: 2/2;
-    grid-row: 3/4;
+    display:flex;
+    justify-content: end;
+    align-items: flex-end;
+    grid-column: 2/end;
+    grid-row: 3/end;
   }
 
   footer a {
     border: 10px solid;
-    box-sizing: inherit;
     background-color: aqua;
+  }
+
+  footer a img {
+    width: 10%;
   }
