@@ -2,8 +2,8 @@ body {
     font-family: 'Raleway' , sans-serif;
     margin: 0;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 50px 1fr 100px;
+    grid-template-columns: 270px 1fr;
+    grid-template-rows: 50px 50px 1fr 100px;
   }
 
   h2 {
@@ -37,21 +37,24 @@ body {
    .sidebar ul {
     display: inline-block;
     position: fixed;
+    font-size: small;
     margin-left: 10px;
     margin-right: 10px;
   }
 
   .sidebar p {
-    margin-top: 22em;
+    margin-top: 25em;
   }
 
   .sidebar ul {
-    margin-top: 25em;
+    margin-top: 27em;
   }
 
   .sidebar img {
     display: inline-block;
     position: fixed;
+    left: 1em;
+    top: 1em;
     border-radius: 50%;
     width: 15rem;
   }
@@ -64,12 +67,12 @@ body {
     right: 0;
     display: grid;
     grid-auto-flow: column;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content:space-around;
     gap: 2em;
     position: sticky;
     grid-column: 2/2;
-    grid-row: 1/1;
+    grid-row: 2/2;
     z-index: 2;
   }
 
@@ -89,7 +92,7 @@ body {
     display: grid;
     justify-items: center;
     grid-column: 2/2;
-    grid-row: 2/2;
+    grid-row: 3/3;
   }
 
   .langueFr img, 
@@ -105,7 +108,7 @@ body {
     gap: 1em;
     align-items: center;
     grid-column: 2/end;
-    grid-row: 3/end;
+    grid-row: 4/end;
   }
 
   footer a {
