@@ -128,23 +128,24 @@ body {
     body {
       grid-template-columns: 0 1fr;
       grid-template-rows: 100px 50px 1fr 100px;
-    };
+    }
 
     .sidebar {
-      background-image: linear-gradient( rgba(0,0,0,1) 0%, rgba(0,6,154,1) 100%);
       grid-column: 2/2;
       grid-row: 1/2; 
+      background-image: linear-gradient( rgba(0,0,0,1) 0%, rgba(0,6,154,1) 100%);
+      background-position-y: top;
     }
     
     .sidebar img,
     .sidebar h1,
     .sidebar p,
     .sidebar ul {
-      position: relative;
+      position: absolute;
       display:flex;
       flex-direction: row;
       justify-content: flex-end;
-      color: black;
+      color: rgb(236, 236, 235);
     }
 
 
@@ -158,6 +159,18 @@ body {
       margin-top: 0;
       margin-left: 5em;
 
+    }
+
+    .sidebar p {
+      margin-top: 3em;
+      margin-left: 10em;
+
+    }
+
+    .sidebar ul {
+      margin-top: 1em;
+      margin-left: 25em;
+      gap: 1.5em;
     }
 
   }
