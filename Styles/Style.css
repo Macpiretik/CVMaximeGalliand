@@ -11,12 +11,6 @@ h2 {
   font-size: 20px;
 }
 
-/* p {
-  font-size: 16px;
-  margin-bottom: 10px;
-} */
-
-
 .sidebar {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 6, 154, 1));
   color: rgb(236, 236, 235);
@@ -58,8 +52,6 @@ h2 {
 .sidebar li {
   margin-bottom: 20px;
 }
-
-
 
 .sidebar ul {
   margin-top: 29em;
@@ -115,15 +107,6 @@ header a:hover {
   grid-row: 3/3;
 }
 
-/* .experience,
-.formation,
-.langues,
-.compétences,
-.projets {
-  background-color: #fff;
-  
-} */
-
 .modal-btn {
   border: none;
   text-decoration: underline;
@@ -156,7 +139,6 @@ header a:hover {
   height: 100%;
   transition: visibility 0.4s;
 }
-
 
 .modal-containerTwo.active {
   visibility: visible;
@@ -225,13 +207,15 @@ header a:hover {
   color: #fff;
 }
 
-.modal h1 {
+.modal h1,
+.modalTwo h1 {
   margin-bottom: 10px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
 
-.modal li {
+.modal li,
+.modalTwo li {
   line-height: 1.4;
   margin-bottom: 16px;
 
@@ -310,6 +294,11 @@ footer a img {
     flex-wrap: wrap;
   }
 
+  .modal li, 
+  .modalTwo li {
+    line-height: 1.0;
+  }
+
 
   .sidebar img {
     width: 80px;
@@ -347,5 +336,17 @@ footer a img {
     grid-template-rows: 200px 50px 1fr 100px;
   }
 
-}
+  .modal li, 
+  .modalTwo li {
+    line-height: 1;
+  }
 
+  .modal, 
+  .modalTwo {
+    max-height: 85%;
+    top: 50%;
+  }
+
+
+
+}
