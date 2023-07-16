@@ -12,7 +12,7 @@ h2 {
 }
 
 .sidebar {
-  background-image: linear-gradient(180deg, rgba(0, 0, 0, 1), rgba(0, 6, 154, 1));
+  background-image: linear-gradient(to bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   color: rgb(236, 236, 235);
   top: 0;
   bottom: 0;
@@ -25,6 +25,9 @@ h2 {
   z-index: -1;
 }
 
+.sidebar a {
+  color: rgb(236, 236, 235);
+}
 .sidebar h1 {
   display: inline-block;
   position: fixed;
@@ -255,16 +258,37 @@ footer a img {
   width: 3em;
 }
 
-.intercalaire {
-  padding-bottom: 200px;
-  background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 6, 154, 1) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+.projets {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5em;
 }
 
-.intercalaire p {
-  font-size: 4em;
+
+
+.projets a {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1em;
+}
+
+.projets a:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05);
 }
 
 @media screen and (max-width: 1024px) {
@@ -278,7 +302,7 @@ footer a img {
   .sidebar {
     grid-column: 2/2;
     grid-row: 1/2;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 6, 154, 1) 100%);
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72);
     background-position-y: top;
   }
 
@@ -293,6 +317,7 @@ footer a img {
     color: rgb(236, 236, 235);
     flex-wrap: wrap;
   }
+  
 
   .modal li, 
   .modalTwo li {
