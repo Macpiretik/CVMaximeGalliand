@@ -19,6 +19,7 @@ h2 {
   left: 0;
   grid-column: 1/2;
   grid-row: 1/end;
+  z-index: 3;
 }
 
 .sidebar.active {
@@ -111,14 +112,33 @@ header a:hover {
 }
 
 .modal-btn {
-  border: none;
-  text-decoration: underline;
-  background-color: #fff;
-  font-size: 15px;
-  color:blue;
-  min-width: 150px;
-  max-width: 80%;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
   cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 1em;
+}
+
+.modal-btn:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05);
+  
+}
+
+.modal-btn:active {
+  transform: scale(0.85);
 }
 
 .modal-container {
@@ -128,6 +148,7 @@ header a:hover {
   width: 100%;
   height: 100%;
   transition: visibility 0.4s;
+  z-index: 2;
 }
 
 .modal-container.active {
@@ -141,6 +162,7 @@ header a:hover {
   width: 100%;
   height: 100%;
   transition: visibility 0.4s;
+  z-index: 2;
 }
 
 .modal-containerTwo.active {
@@ -172,11 +194,13 @@ header a:hover {
   width: 95%;
   max-width: 80%;
   min-width: 300px;
+  max-height: 70%;
   padding: 30px;
   background: #fff;
   border-radius: 5px;
   position: absolute;
-  top: 40%;
+  overflow: auto;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, calc(-50% - 50px));
   transition: opacity 0.4s ease-out,
@@ -244,6 +268,7 @@ footer {
   grid-row: 4/end;
   background-color: #fff;
   box-shadow: 0 0 0.8em 0em black;
+  z-index: 0;
 }
 
 footer a {
@@ -289,6 +314,10 @@ footer a img {
 .projets a:hover {
   box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
   transform: scale(1.05);
+}
+
+.projets a:active {
+  transform: scale(1);
 }
 
 @media screen and (max-width: 1024px) {
