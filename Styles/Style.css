@@ -8,7 +8,7 @@ body {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: large;
 }
 
 .sidebar {
@@ -48,6 +48,7 @@ h2 {
 .sidebar ul {
   display: inline-block;
   position: fixed;
+  font-family: 'roboto',sans-serif;
   font-size: small;
   margin-left: 10px;
   margin-right: 10px;
@@ -55,6 +56,7 @@ h2 {
 
 .sidebar li {
   margin-bottom: 20px;
+  font-size: medium;
 }
 
 .sidebar ul {
@@ -94,6 +96,7 @@ header {
 header a {
   text-decoration: none;
   color: darkblue;
+  font-size: larger;
   font-weight: 700;
 }
 
@@ -103,38 +106,32 @@ header a:hover {
   box-shadow: 0 0 2em 2em darkblue;
 }
 
-.mainContent {
-  top: 100px;
-  display: grid;
-  justify-content: space-around;
-  grid-column: 2/2;
-  grid-row: 3/3;
-}
-
 .modal-btn {
   background-color: #c2fbd7;
   border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,
+  rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,
+  rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,
+  rgba(44, 187, 99, .15) 0 16px 32px;
   color: green;
   cursor: pointer;
   display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  font-family: 'Roboto',sans-serif;
   padding: 7px 20px;
   text-align: center;
   text-decoration: none;
   transition: all 250ms;
   border: 0;
   font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
   margin: 1em;
 }
 
 .modal-btn:hover {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,
+  rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,
+  rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,
+  rgba(44,187,99,.25) 0 16px 32px;
   transform: scale(1.05);
-  
 }
 
 .modal-btn:active {
@@ -248,14 +245,67 @@ header a:hover {
 
 }
 
+.mainContent {
+  top: 100px;
+  display: grid;
+  justify-content: space-around;
+  grid-column: 2/2;
+  grid-row: 3/3;
+}
+
 section {
   padding-top: 100px;
+}
+
+.pageName {
+  font-size: x-large;
+  color:#008793;
+  text-shadow:rgba(44,187,99,.35) 0.3em 0.2em 0.5em;
+  font-family: 'Roboto',sans-serif;
 }
 
 .langueFr img,
 .langueEn img,
 .langueEs img {
   width: 20px;
+}
+
+.projets {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5em;
+}
+
+.projets a {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,
+  rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,
+  rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,
+  rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto',sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  margin: 1em;
+}
+
+.projets a:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,
+  rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,
+  rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,
+  rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05);
+}
+
+.projets a:active {
+  transform: scale(1);
 }
 
 footer {
@@ -283,55 +333,18 @@ footer a img {
   width: 3em;
 }
 
-.projets {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 5em;
-}
+@media screen and (max-width: 1024px) { /*partie responsive petits écrans et écrans splittés*/
 
-
-
-.projets a {
-  background-color: #c2fbd7;
-  border-radius: 100px;
-  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
-  color: green;
-  cursor: pointer;
-  display: inline-block;
-  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
-  padding: 7px 20px;
-  text-align: center;
-  text-decoration: none;
-  transition: all 250ms;
-  border: 0;
-  font-size: 16px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  margin: 1em;
-}
-
-.projets a:hover {
-  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
-  transform: scale(1.05);
-}
-
-.projets a:active {
-  transform: scale(1);
-}
-
-@media screen and (max-width: 1024px) {
-
-  body {
+  body { /*réorganisation de la page en format portrait*/
     grid-template-columns: 0 1fr;
     grid-template-rows: 100px 50px 1fr 100px;
     
   }
 
-  .sidebar {
+  .sidebar { /*repositionnement de la barre au dessus du header*/
     grid-column: 2/2;
     grid-row: 1/2;
-    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72);
+    background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72);/* changement de la direction du dégradé*/
     background-position-y: top;
   }
 
@@ -347,13 +360,6 @@ footer a img {
     flex-wrap: wrap;
   }
   
-
-  .modal li, 
-  .modalTwo li {
-    line-height: 1.0;
-  }
-
-
   .sidebar img {
     width: 80px;
     top: 10px;
@@ -378,13 +384,26 @@ footer a img {
     gap: 1.5em;
   }
 
+  .sidebar li {
+    font-size: small;
+  }
+
   header {
     grid-row: 2/3;
   }
 
+  .header a {
+    font-size:large ;
+  }
+
+  .modal li, 
+  .modalTwo li {
+    line-height: 1.0;
+  }
+
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:850px) { /*partie responsive très petits écrans*/
 
   body {
     grid-template-rows: 200px 50px 1fr 100px;
@@ -401,6 +420,8 @@ footer a img {
     top: 50%;
   }
 
-
+  .header a {
+    font-size:medium ;
+  }
 
 }

@@ -4,17 +4,17 @@
   <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Accueil - CV Maxime GALLIAND</title>
+      <title>One page CV Maxime GALLIAND</title>
       <link href="Styles/Style.css" rel="stylesheet" >
       <script defer src="Styles/script.js"></script>
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,500&family=Roboto&display=swap" rel="stylesheet">
 
   </head>
 
   <body>
-      <header class="header">
+      <header class="header"><!-- liens des ancres de page en entête -->
         <a href="#experience">Expérience</a>
         <a href="#formation">Formation</a>
         <a href="#langues">Langues</a>
@@ -22,13 +22,13 @@
         <a href="#projets">Projets</a>
       </header>
 
-      <div class="modal-container">
+      <div class="modal-container"> <!--pop-up expériences-->
 
-        <div class="overlay modal-trigger"></div>
+        <div class="overlay modal-trigger"></div> <!--fond clickable du pop-up-->
 
-        <div class="modal">
+        <div class="modal"> <!--corps du pop-up lui même-->
           <h2>Experience exaustives</h2>
-          <button class="close-modal modal-trigger">&times;</button>
+          <button class="close-modal modal-trigger">&times;</button><!--croix de fermeture de pop-up-->
           <ul>
             <li>Salle de Soins Post-Interventionnelle, Clinique Les Fontaines - Melun (77), 2014 à 2015(Poste IDE fixe de jour)</li>
             <li>Chirurgie Générale, Clinique Les Fontaines - Melun (77), 2015 à 2016 (Poste IDE fixe de nuit)</li>
@@ -38,11 +38,11 @@
         </div>
       </div>
 
-      <div class="modal-containerTwo">
+      <div class="modal-containerTwo"> <!--pop-up formation-->
 
-        <div class="overlay modal-clickable"></div>
+        <div class="overlay modal-clickable"></div><!--fond clickable du pop-up-->
 
-        <div class="modalTwo">
+        <div class="modalTwo"><!--corps du second pop-up-->
           <h2>Formations exaustives</h2>
           <button class="close-modal modal-clickable">&times;</button>
           <ul>
@@ -82,6 +82,10 @@
       </div>
 
       <div class="mainContent">
+        <section class="pageName" id="pageName">
+          <h1>Mon CV en ligne</h1>
+        </section>
+
         <section class="experience" id="experience">
             <h2>Experience</h2>
             <p><strong>Infirmier de nuit, Clinique les Fontaines</strong></p>
@@ -118,11 +122,11 @@
               <strong>Français</strong> : maternelle</p>
             </li>
             <li class="langueEn">
-              <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-button-round-250.png" alt="">
+              <img src="https://cdn.countryflags.com/thumbs/united-kingdom/flag-button-round-250.png" alt="Uk flag">
               <strong>Anglais</strong> : niveau intermédiaire</p>
             </li>
             <li class="langueEs">
-              <img src="https://cdn.countryflags.com/thumbs/spain/flag-button-round-250.png" alt="">
+              <img src="https://cdn.countryflags.com/thumbs/spain/flag-button-round-250.png" alt="Sp flag">
               <strong>Espagnol</strong> : quelque notions</p>
             </li>
           </ul>
@@ -163,6 +167,7 @@
         
 
       <footer>
+        <a href="#pageName">Vers haut de page</a>
         <a href="https://www.linkedin.com/in/galliandmaxime/">
           <img src="https://www.pngall.com/wp-content/uploads/2016/07/Linkedin-Download-PNG.png" alt="my Linkedin">
         </a>
