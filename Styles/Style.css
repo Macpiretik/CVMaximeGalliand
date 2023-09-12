@@ -424,4 +424,8 @@ footer a img {
     font-size:medium ;
   }
 
+  .mainContent {
+    margin-left: 10px;
+  }
+
 }
